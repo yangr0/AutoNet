@@ -32,14 +32,6 @@ except ImportError:
 
 
 
-# Check if root #
-
-if os.geteuid() != 0:
-
-	print("  Please run as root!")
-
-
-
 # COLORS #
 
 red = "\u001b[31;1m"
@@ -187,6 +179,14 @@ def banner():
 # Main #
 
 def main():
+
+	# Check if root #
+
+	if os.geteuid() != 0:
+
+		print("  Please run as root!")
+
+		exit(0)
 
 	banner()
 
