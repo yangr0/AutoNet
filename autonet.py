@@ -166,7 +166,7 @@ def banner():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                                v1")
+	print(random.choice(list) + "                                         888888" + red + "                                v1.2")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
@@ -192,41 +192,35 @@ def main():
 
 	# Variables #
 
-	range = input(random.choice(list) + "  range of IP adress(ex: 192.168.0.0/8): ")
+	print("\n")
 
-	passive = input(random.choice(list) + "  do you want to sniff only(passive mode) [y/n]: ")
+	range = input(random.choice(list) + "                            range of IP adress(ex: 192.168.0.0/8): ")
 
-	interface = input(random.choice(list) + "  what interface do you want to use(ex: wlan0): ")
+	print("\n")
 
-	fs = input(random.choice(list) + "  do you want to enable fast scan(only scans .1, .100, .254) [y/n]: ")
+	passive = input(random.choice(list) + "           do you want to sniff only(passive mode) blank for no, [y/yes] for yes: ")
+
+	print("\n")
+
+	interface = input(random.choice(list) + "                     what interface do you want to use(ex: wlan0): ")
+
+	print("\n")
+
+	fs = input(random.choice(list) + "     do you want to enable fast scan(only scans .1, .100, .254) blank for no, [y/yes] for yes: ")
+
+	# Checks #
 
 	range = " -r " + range
 
-	# Checks #
+	interface = " -i " + interface
 
 	if passive in "y" or "yes":
 
 		passive = " -p"
 
-	elif passive in any:
-
-		passive = None
-
-	if interface in "":
-
-		interface = ""
-
-	elif interface in any:
-
-		interface = " -i " + interface
-
-	if fs in "y" or "yes":
+	elif fs in "y" or "yes":
 
 		fs = " -f"
-
-	elif fs = any:
-
-		fs = None
 
 	os.system("netdiscover" + range + passive + interface + fs)
 
