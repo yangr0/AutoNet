@@ -156,7 +156,7 @@ def banner():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                                v1.2")
+	print(random.choice(list) + "                                         888888" + red + "                                v1.4")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
