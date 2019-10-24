@@ -10,8 +10,6 @@
 
 try:
 
-	import speech_recognition as sr
-
 	import os
 
 	import random
@@ -34,21 +32,21 @@ except ImportError:
 
 # COLORS #
 
-red = "\u001b[31;1m"
+red = "\033[31;1m"
 
-reset = "\u001b[0m"
+reset = "\033[0m"
 
-green = "\u001b[32;1m"
+green = "\033[32;1m"
 
-cyan = "\u001b[36;1m"
+cyan = "\033[36;1m"
 
-yellow = "\u001b[33;1m"
+yellow = "\033[33;1m"
 
-magenta = "\u001b[35;1m"
+magenta = "\033[35;1m"
 
-blue = "\u001b[34;1m"
+blue = "\033[34;1m"
 
-white = "\u001b[37;1m"
+white = "\033[37;1m"
 
 list = [red, green, cyan, yellow, magenta, blue] # List of colors to chose from #
 
@@ -88,7 +86,7 @@ for x in range(5): # Loading Effect #
 
 	os.system("clear")
 
-print(random.choice(list) + "  AutoNet is starting")
+print(random.choice(list) + "  AutoNet has started")
 
 time.sleep(3)
 
@@ -170,7 +168,7 @@ def banner():
 	print(random.choice(list) + "                                     Email: iinc0gnit0@pm.me")
 	time.sleep(0.1)
 	print("\n")
-	print(random.choice(list) + "                                     Instagram: i.nc0gnit0")
+	print(random.choice(list) + "                                     Instagram: inc0gnit0.offical")
 	time.sleep(0.1)
 	print("\033[0m")
 
