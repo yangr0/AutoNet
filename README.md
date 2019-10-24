@@ -16,9 +16,9 @@ It is easy to use and a great UI
 
 Created by: inc0gnit0
 
-GitHub: iinc0gnit0(https://github.com/iinc0gnit0)
+GitHub: [iinc0gnit0](https://github.com/iinc0gnit0)
 
-Instagram: inc0gnit0.offical(https://instagram.com/inc0gnit0.offical)
+Instagram: [inc0gnit0.offical](https://instagram.com/inc0gnit0.offical)
 
 Email: iinc0gnit0@pm.me
 
