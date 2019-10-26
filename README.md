@@ -24,6 +24,12 @@ Email: iinc0gnit0@pm.me
 
 ## Updates
 
+### v2.0
+
+- Fixed if you chose passive it would not be passive
+
+- Changed to yes/no instead of leaving blank
+
 ### v1.4
 
 - AutoNet released
