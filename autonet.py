@@ -196,7 +196,7 @@ def main():
 
 	print("\n")
 
-	passive = input(random.choice(list) + "                   do you want to sniff only(passive mode) [no/yes]: ")
+	passive = input(random.choice(list) + "                       do you want to sniff only(passive mode) [no/yes]: ")
 
 	print("\n")
 
@@ -204,7 +204,7 @@ def main():
 
 	print("\n")
 
-	fs = input(random.choice(list) + "                  do you want to enable fast scan(only scans .1, .100, .254) [no/yes]: ")
+	fs = input(random.choice(list) + "                   do you want to enable fast scan(only scans .1, .100, .254) [no/yes]: ")
 
 	# Checks #
 
