@@ -156,7 +156,7 @@ def banner():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                                v1.4")
+	print(random.choice(list) + "                                         888888" + red + "                                v2.0")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
@@ -192,35 +192,45 @@ def main():
 
 	print("\n")
 
-	range = input(random.choice(list) + "                            range of IP adress(ex: 192.168.0.0/8): ")
+	range = input(random.choice(list) + "                              range of IP adress(ex: 192.168.0.0/8): ")
 
 	print("\n")
 
-	passive = input(random.choice(list) + "           do you want to sniff only(passive mode) blank for no, [y/yes] for yes: ")
+	passive = input(random.choice(list) + "                   do you want to sniff only(passive mode) [no/yes]: ")
 
 	print("\n")
 
-	interface = input(random.choice(list) + "                     what interface do you want to use(ex: wlan0): ")
+	interface = input(random.choice(list) + "                          what interface do you want to use(ex: wlan0): ")
 
 	print("\n")
 
-	fs = input(random.choice(list) + "     do you want to enable fast scan(only scans .1, .100, .254) blank for no, [y/yes] for yes: ")
+	fs = input(random.choice(list) + "                  do you want to enable fast scan(only scans .1, .100, .254) [no/yes]: ")
 
 	# Checks #
 
-	range = " -r " + range
+	range1 = " -r " + range
 
-	interface = " -i " + interface
+	interface1 = " -i " + interface
 
-	if passive in "y" or "yes":
+	if passive in "yes":
 
-		passive = " -p"
+		passive1 = " -p"
 
-	elif fs in "y" or "yes":
+	if passive in "no":
 
-		fs = " -f"
+		passive1 = ""
 
-	os.system("netdiscover" + range + passive + interface + fs)
+	if fs in "yes":
+
+		fs1 = "-f"
+
+	if fs in "no":
+
+		fs1 = ""
+
+
+
+	os.system("netdiscover" + interface1 + range1 + passive1 + fs1)
 
 
 
