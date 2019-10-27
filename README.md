@@ -24,7 +24,7 @@ Run installation file
 
 ## Usages
 
-`python3 autonet.py`
+`sudo python3 autonet.py`
 
 ## Credit
 
