@@ -6,7 +6,21 @@ It is easy to use and a great UI
 
 ## Instalation
 
-`git clone https://github.com/iinc0gnit0/AutoNet && cd AutoNet && chmod +x * && sudo install.sh`
+Clones repository froms GitHub
+
+`git clone https://github.com/iinc0gnit0/AutoNet`
+
+Change directory to AutoNet
+
+`cd AutoNet`
+
+Changes file permissions
+
+`chmod +x install.sh`
+
+Run installation file
+
+`sudo ./install.sh`
 
 ## Usages
 
