@@ -1,8 +1,6 @@
 # AutoNet
 
-AutoNet is tool for automating the tool Netdiscover
-
-It is easy to use and a great UI
+AutoNet is tool for automating the tool NetDiscover
 
 ## Instalation
 
